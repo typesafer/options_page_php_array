@@ -44,7 +44,43 @@ array( "name" => "Our_Partners",
 			 "type" => "select",
 			 "options" => array("Publish", "Pending Approval", "In Future"),
 			 "std" => "Lagos",
-         )))),
+         )),
+	"unique_id()2" => array(
+         "partner_name" => array(
+		     "id" => $shortname."_partner_name",
+             "name" => "the_partner_name",
+			 "desc" => "The partner's name",
+			 "type" => "text",
+			 "value" => "",
+			 "placeholder" => "Droid Van Doe",
+         ),
+		"partner_url" => array(
+		     "id" => $shortname."_partner_url",
+             "name" => "the_partner_url",
+			 "desc" => "Url of the partner",
+			 "type" => "text",
+			 "value" => "",
+			 "placeholder" => "http://www.example.com",
+         ),
+		 "partner_logo" => array(
+		     "id" => $shortname."_partner_logo",
+             "name" => "the_partner_logo",
+			 "desc" => "Logo of the partner",
+			 "type" => "text",
+			 "value" => "",
+			 "placeholder" => "http://www.example.com/app/cdn/katze/300/200",
+         ),
+		 "partner_status" => array(
+		     "id" => $shortname."_partner_status",
+             "name" => "the_partner_status",
+			 "desc" => "The status of the partner",
+			 "type" => "select",
+			 "options" => array("Publish", "Pending Approval", "In Future"),
+			 "std" => "Publish",
+         ))
+		 )),
+		 
+
 	
 array( "name" => "the_sidebars",
 	"desc" => "The sidebar name",
@@ -130,5 +166,8 @@ echo "<pre>";
 print_r($options);
 echo "</pre>";
 echo "<br/>";
-print_r($options[0]['pt_our_partners']);
+echo "<hr/>";
+echo "<pre>";
+print_r($options[1]['dom_items']);
+echo "</pre>";
 ?>
