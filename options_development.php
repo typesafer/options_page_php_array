@@ -126,4 +126,9 @@ array( "name" => "stackoverflow_handle",
 	"type" => "text",
 	"value" => ""),
 );
+echo "<pre>";
+print_r($options);
+echo "</pre>";
+echo "<br/>";
+print_r($options[0]['pt_our_partners']);
 ?>
